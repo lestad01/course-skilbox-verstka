@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 300vh;
+}
+.block{
+  width: 500px;
+}
+.btn{
+  margin: 40px;
+  padding: 10px 15px;
+  background-color: orangered;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.red{
+  background-color: red;
+}
+.block-second{
+  display: none;
+  background-color: purple;
+}
+.butch{
+  background-color: green;
+  margin: 40px;
+  padding: 10px 15px;
+  cursor: pointer;
+}

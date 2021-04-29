@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Otels</title>
+    <link rel="icon" type="image" href="https://img.icons8.com/emoji/96/000000/hotel-emoji.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+    <div class="container-site">
+    <header class="header">
+        <div class="container container-header">
+            <div class="header-left-part">
+                <a href="project_1_SkillBox.html">
+                    <img src="img/Logo.png" alt="Lagoona">
+                </a>
+                <a href="tel:+74953225448" class="header-phone">+7 495 322 54 48</a>
+            </div>
+            <div class="header-right-part">
+                <a href="#" class="header-personal-area">Личный кабинет</a>
+            </div>
+            <div class="header-second-part">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Преимущества</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Размещение</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Блог</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                    </ul> 
+                    <canvas id="canvas" width="250px" height="150px">
+                        Hello everyone 
+                    </canvas>
+                    <script> let canvas = document.querySelector('#canvas');
+                    let ttx = canvas.getContext('2d');
+                    ttx.rect(50, 50, 100, 75);
+                    ttx.stroke();
+                    </script>
+                    <p>Temperature</p>
+                    <meter value="60" max="100" low="10" high="65">high</meter>
+                    <form action="#" class="header-search">
+                        <input type="search" placeholder="Поиск" class="header-input">
+                        <button class="header-btn"></button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-reserv">
+            <div class="container">
+                <div class="section-reserv-left">
+                    <h1 class="heading">Быстрая бронь</h1>
+                    <form action="#" class="reserv-search">
+                        <input type="text" class="section-reserv-input" placeholder="Город">
+                        <input type="text" class="section-reserv-input" placeholder="Категория номера">
+                        <input type="text" class="section-reserv-input" placeholder="Дата заселения">
+                        <input type="text" class="section-reserv-input" placeholder="Количество ночей">
+                        <input type="text" class="section-reserv-input" placeholder="Количество гостей">
+                        <button class="btn">Найти номер</button>
+                        <small><span>9 756</span> предложений доступно</small>
+                    </form>
+                </div>
+
+                <div class="section-reserv-right">
+                    <h1 class="heading">
+                        Спецпредложение
+                    </h1>
+                    <div class="section-right-img">
+                        <img src="img/22.jpg" alt="Номера категории люкс">
+                        <h1 class="reserv-right-heading">
+                            Номера категории люкс
+                        </h1>
+                        <span class="section-reserv-span">от 5 000 р</span>
+                        <a class="section-reserv-link" href="#" >Подробнее</a>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+        <section class="section-about">
+            <div class="container">
+                <h2 class="heading">
+                    О нас
+                </h2>
+                <p class="section-about-text">
+                    Идейные соображения высшего порядка, а также сложившаяся структура организации 
+                    влечет за собой процесс внедерния и модернизации системы обучения кадров, соответсвует 
+                    насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие 
+                    различных форм деятельности представвялет собой интересный эксперимент проверки системы обучения
+                    кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации 
+                    требуют определения и уточнения существенных финансовых и  административных условий.
+                </p>
+            </div>
+        </section>
+        <section class="section-services">
+            <div class="container">
+                <h2 class="heading">
+                    Услуги
+                </h2>
+                <div class="section-compartment">
+                    <div class="section-fon-1">
+                        <img src="img/10.jpg" class="section-compartment-img" alt="Эксклюзивное обслуживание">
+                    </div>
+                    <h4 class="section-services-heading">
+                        <a href="#">Эксклюзивное обслуживание <span class="bracket">></span></a>
+                    </h4>
+                    <p class="section-text">
+                        Равным образом постоянный количественный рост и сфера нашей активности
+                    </p>
+                </div>
+                <div class="section-compartment">
+                    <div class="section-fon-2">
+                        <img src="img/15.jpg" class="section-compartment-img" alt="Аренда банкетных залов">
+                    </div>
+                    <h4 class="section-services-heading">
+                        <a href="#">Аренда банкетных залов <span class="bracket">></span></a>
+                    </h4>
+                    <p class="section-text">
+                        Значимость этих проблем очевидна, что дальнейшее развитие различных форм.
+                    </p>
+                </div>
+                <div class="section-compartment">
+                    <div class="section-fon-3">
+                        <img src="img/12.jpg" class="section-compartment-img" alt="Сауны,бассейны,бани,фитнесс-залы">
+                    </div>
+                    <h4 class="section-services-heading">
+                        <a href="#">Сауны,бассейны,бани,фитнесс-залы <span class="bracket">></span></a>
+                    </h4>
+                    <p class="section-text">
+                       Не следуюет,однако забывать что начало повседневной работы по формированию позиции.
+                    </p>
+                </div>
+                <div class="section-compartment">
+                    <div class="section-fon-4">
+                        <img src="img/17.jpg" class="section-compartment-img" alt="Охраняемые автомобильнеые стоянки">
+                    </div>
+                    <h4 class="section-services-heading">
+                        <a href="#">Охраняемые автомобильнеые стоянки <span class="bracket">></span></a>
+                    </h4>
+                    <p class="section-text">
+                        Не следуюет,однако забывать что начало повседневной работы по формированию позиции.
+                    </p>
+                </div>
+            </div>   
+        </section>
+        <section class="section-advantages">
+            <div class="container">
+                <h2 class="heading">
+                    Преимущества
+                </h2>
+                <div class="section-cards">
+                    <img src="img/svg/bathtub.svg" alt="Идейные соображения высшего порядка" class="advantages-img">
+                    <p class="section-text">
+                        Идейные соображения высшего порядка, а также постоянный количественный рост
+                    </p>
+                </div>
+                <div class="section-cards">
+                    <img src="img/svg/hanger.svg" alt="Идейные соображения высшего порядка" class="advantages-img">
+                    <p class="section-text">
+                        Значимость этих проблем настолько очевидна, что вопрос остается открытым
+                    </p>
+                </div>
+                <div class="section-cards">
+                    <img src="img/svg/heating.svg" alt="Идейные соображения высшего порядка" class="advantages-img">
+                    <p class="section-text">
+                        Таким образом реализация плановых заданий играет важную роль для понимания
+                    </p>
+                </div>
+                <div class="section-cards">
+                    <img src="img/svg/hotel-key.svg" alt="Идейные соображения высшего порядка" class="advantages-img">
+                    <p class="section-text">
+                        Повседневная практика показывает,что сложившаяся структура организации
+                    </p>
+                </div>
+                <div class="section-cards">
+                    <img src="img/svg/parking.svg" alt="Идейные соображения высшего порядка" class="advantages-img">
+                    <p class="section-text">
+                        Равным образом рамки и место обучения кадров способствует подготовке сотрудника
+                    </p>
+                </div>
+                <div class="section-cards">
+                    <img src="img/svg/reception.svg" alt="Идейные соображения высшего порядка" class="advantages-img">
+                    <p class="section-text">
+                        Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса
+                    </p>
+                </div>
+                <div class="section-cards">
+                    <img src="img/svg/security-box.svg" alt="Идейные соображения высшего порядка" class="advantages-img">
+                    <p class="section-text">
+                        Повседневная практика показывает,что дальнейшее развитие различных форм
+                    </p>
+                </div>
+                <div class="section-cards">
+                    <img src="img/svg/swimming-pool.svg" alt="Идейные соображения высшего порядка" class="advantages-img">
+                    <p class="section-text">
+                        Значимость этого настолько очевидна, что консультация наших экспертов помогает
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-advantages">
+            <div class="container">
+                <h2 class="heading">Размещение</h2>
+                <div class="advantages-block">
+                    <div class="advantages-place"></div>
+                    <p class="section-text"><small>от</small> <strong class="advantages-description-text">4 698 р /</strong> ночь</p>
+                    <img src="img/svg/star.svg" alt="Рейтинг 4 из 5" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <p class="section-text">Lagoona espanola</p>
+                    <small>Барселона,Испания</small>
+                    <div class="advantages-btn-card">
+                        <button class="advantages-btn" href="#">Номера</button>
+                    </div>
+                </div>
+                <div class="advantages-block">
+                    <div class="advantages-place"></div>
+                    <p class="section-text"><small>от</small> <strong class="advantages-description-text">5 148 р /</strong> ночь</p>
+                    <img src="img/svg/star.svg" alt="Рейтинг 4 из 5" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <p class="section-text">Lagoona son tipicas</p>
+                    <small>Барселона,Испания</small>
+                    <div class="advantages-btn-card">
+                        <button class="advantages-btn" href="#">Номера</button>
+                    </div>
+                </div>
+                <div class="advantages-block">
+                    <div class="advantages-place"></div>
+                    <p class="section-text"><small>от</small> <strong class="advantages-description-text">6 254 р /</strong> ночь</p>
+                    <img src="img/svg/star.svg" alt="Рейтинг 5 из 5" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <p class="section-text">Lagoona de la guerra</p>
+                    <small>Барселона,Испания</small>
+                    <div class="advantages-btn-card">
+                        <button class="advantages-btn" href="#">Номера</button>
+                    </div>
+                </div>
+                <div class="advantages-block">
+                    <div class="advantages-place"></div>
+                    <p class="section-text"><small>от</small> <strong class="advantages-description-text">6 320 р /</strong> ночь</p>
+                    <img src="img/svg/star.svg" alt="Рейтинг 5 из 5" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <p class="section-text">Lagoona mentira piadosa</p>
+                    <small>Барселона,Испания</small>
+                    <div class="advantages-btn-card">
+                        <button class="advantages-btn" href="#">Номера</button>
+                    </div>
+                </div>
+                <div class="advantages-block">
+                    <div class="advantages-place"></div>
+                    <p class="section-text"><small>от</small> <strong class="advantages-description-text">6 457 р /</strong> ночь</p>
+                    <img src="img/svg/star.svg" alt="Рейтинг 4 из 5" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <p class="section-text">Lagoona empujar la creatividad</p>
+                    <small>Барселона,Испания</small>
+                    <div class="advantages-btn-card">
+                        <button class="advantages-btn" href="#">Номера</button>
+                    </div>
+                </div>
+                <div class="advantages-block">
+                    <div class="advantages-place"></div>
+                    <p class="section-text"><small>от</small> <strong class="advantages-description-text">6 490 р /</strong> ночь</p>
+                    <img src="img/svg/star.svg" alt="Рейтинг 4 из 5" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <p class="section-text">Lagoona el retorno</p>
+                    <small>Барселона,Испания</small>
+                    <div class="advantages-btn-card">
+                        <button class="advantages-btn" href="#">Номера</button>
+                    </div>
+                </div>
+                <div class="advantages-block">
+                    <div class="advantages-place"></div>
+                    <p class="section-text"><small>от</small> <strong class="advantages-description-text">6 505 р /</strong> ночь</p>
+                    <img src="img/svg/star.svg" alt="Рейтинг 5 из 5" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <p class="section-text">Lagoona enfermo termino</p>
+                    <small>Барселона,Испания</small>
+                    <div class="advantages-btn-card">
+                        <button class="advantages-btn" href="#">Номера</button>
+                    </div>
+                </div>
+                <div class="advantages-block">
+                    <div class="advantages-place"></div>
+                    <p class="section-text"><small>от</small> <strong class="advantages-description-text">4 698 р /</strong> ночь</p>
+                    <img src="img/svg/star.svg" alt="Рейтинг 4 из 5" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <img src="img/svg/star.svg" alt="" class="raiting">
+                    <p class="section-text">Lagoona espanola</p>
+                    <small>Барселона,Испания</small>
+                    <div class="advantages-btn-card">
+                        <button class="advantages-btn" href="#">Номера</button>
+                    </div>
+                </div>
+                <div class="advantages-block">
+                    <div class="advantages-place">
+                        <img src="img/41.png" alt="Просмотреть все варианты">
+                        <div class="advantages-btn-card">
+                            <h2 class="advantages-heading">
+                                <a href="#" class="advantages-heading-link">Посмотреть все варианты <span class="advantages-text">></span></a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+
+</html>

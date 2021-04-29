@@ -1,0 +1,114 @@
+*,*::before,*::after {
+  box-sizing:inherit;
+  padding: 0;
+  margin: 0;
+}
+* {
+  list-style: none;
+  text-decoration: none;
+  /* transition: all .3s ease; */
+}
+html {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  background: #8a7878;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 100%;
+  padding: 40px 30px;
+}
+.animation__block{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.subtitle{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.btn{
+  font-size: 20px;
+  padding: 10px 20px;
+  border: whitesmoke;
+  background: black;
+  color: rgb(230, 184, 152);
+  text-transform: uppercase;
+  border-radius: 15px;
+  transition: all .4s ease-in-out;
+}
+.btn:hover{
+  cursor: pointer;
+  background: whitesmoke;
+  color: black;
+  transition: all .4s ease-in-out;
+}
+.btn-duration{
+  animation: anim 1.5s linear 2;
+}
+/* infinite */
+@keyframes anim{
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(60px);
+  }
+  70%{
+    transform: translateX(20px);
+  }
+  100%{
+    transform: translateX(80px);
+  }
+}
+.circle-animation{
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgb(199, 43, 43);
+  background: linear-gradient(90deg, rgba(199,42,42, 0.9556197478991597) 43%, rgb(125, 211, 92) 100%);
+  animation: twist 1.2s linear alternate infinite;
+  /* animation-name: twist;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-timing-function: linear; 
+  animation-iteration-count: infinite;
+  animation-delay: 2s;*/
+  position: relative;
+}
+.circle-animation:hover{
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+@keyframes twist {
+  0%{
+    transform: none;
+  }
+  20%{
+    transform: translateX(100px) rotate(72deg);
+  }
+  40%{
+    transform: translateX(200px) rotate(144deg);
+  }
+  60%{
+    transform: translateX(300px) rotate(216deg);
+  }
+  80%{
+    transform: translateX(400px) rotate(288deg);
+  }
+  100%{
+    transform: translateX(500px) rotate(360deg);
+  }
+}
+
+
+
+
+
+

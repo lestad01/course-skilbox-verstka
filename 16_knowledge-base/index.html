@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Checkbox</title>
+
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="checkbox">
+            <h1 class="checkbox__heading">
+                Категории:
+            </h1>
+            <div class="checbox__box">
+                <label class="checkbox__check checkbox_option">
+                    <input class="checkbox_input" type="checkbox" tabindex="1">
+                    <span class="checbox__new-check-box"></span>
+                        Динозавры
+                </label>
+            </div>
+            <div class="checbox__box">
+                <label class="checkbox__check checkbox_option">
+                    <input class="checkbox_input" type="checkbox">
+                    <span class="checbox__new-check-box"></span>
+                        Медведи
+                </label>
+            </div>
+            <div class="checbox__box">
+                <label class="checkbox__check checkbox_option">
+                    <input class="checkbox_input" type="checkbox">
+                    <span class="checbox__new-check-box"></span>
+                        Косули
+                </label>
+            </div>
+            <div class="checbox__box">
+                <label class="checkbox__check checkbox_option">
+                    <input class="checkbox_input" type="checkbox">
+                    <span class="checbox__new-check-box"></span>
+                        Лисы
+                </label>
+            </div>
+            <div class="checbox__box">
+                <label class="checkbox__check checkbox_option">
+                    <input class="checkbox_input" type="checkbox">
+                    <span class="checbox__new-check-box"></span>
+                        Волки
+                </label>
+            </div>
+            <div class="checbox__box">
+                <label class="checkbox__check checkbox_option">
+                    <input class="checkbox_input" type="checkbox">
+                    <span class="checbox__new-check-box"></span>
+                        Олени и лоси
+                </label>
+            </div>
+        </div>
+        <div class="select">
+            <select id="customSelect" class="select_style" >
+                <option value="">Материал</option>
+                <option value="">Древесина</option>
+                <option value="">Металл</option>
+                <option value="">Камень</option>
+                <option value="">Пластик</option>
+                <option value="">Композитный</option>
+                <option value="">Гипс</option>
+            </select>
+        </div>
+        <div class="yandex-map">
+            <div id="map" style="width: 400px; height: 400px"></div>
+        </div>
+        <div class="scrollBar">
+            <div class="customScroll" data-simplebar>
+                Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут
+                объективно рассмотрены соответствующими инстанциями.Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет
+                собой интересный эксперимент проверки глубокомысленных рассуждений.
+                Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно
+                интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна,
+                что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+            </div>
+        </div>
+        <div class="validation">
+                <form action="" class="form">
+                    <input class="validation__input-1" name="name" type="text" placeholder="Имя*" data-validate-field="name">
+                    <input class="validation__input-2" name="phone" type='tel' placeholder="Телефон*" data-validate-field="phone">
+                    <input class="validation__input-3" name="mail" type="e-mail" placeholder="E-mail*" data-validate-field="mail">
+                <div class="btn-block">
+                    <button class="validation__btn" type="submit">Заказать</button>
+                </div>
+                </form>
+        </div>
+
+        <div class="tooltip">
+                <div class="tooltip__text">
+                  <p class="text">
+                    Следует отметить, что социально-экономическое развитие способствует повышению
+                    качества переосмысления внешнеэкономических политик <span class="tolltip__span"></span>
+                    <span class="tooltip__hint">
+                        Глава 2, страница 176
+                    </span>
+                  </p>
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/choices.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/index_js.js"></script>
+</body>
+</html>
